@@ -1,0 +1,29 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title_main {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4.2rem;
+  line-height: 5.4rem;
+  color: #030000;
+}
+.desc_main {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  /* or 175% */
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #6c6c6c;
+}
+@mixin flex($just: start, $align: center, $wrap: wrap, $direction: row) {
+  display: flex;
+  justify-content: $just;
+  align-items: $align;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+}
